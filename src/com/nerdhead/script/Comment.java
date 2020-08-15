@@ -2,7 +2,11 @@ package com.nerdhead.script;
 
 import com.nerdhead.rull.Result;
 import com.nerdhead.rull.Result_DTO;
-
+/**
+ * @since 2020.08.15
+ * @author nerdhead
+ *	대사를 담당하는 출력 클래스
+ */
 public class Comment implements DealerComment{
 	private StringBuilder sb=new StringBuilder();
 	
@@ -10,7 +14,7 @@ public class Comment implements DealerComment{
 		sb.setLength(0);
 		
 		sb.append(DEALER).append(" : ").append(str);
-		
+		//DEALER+" : "+str 와 같음
 		
 		System.out.println(sb);
 
@@ -18,7 +22,6 @@ public class Comment implements DealerComment{
 
 	private void systemSay(String str) {
 		sb.setLength(0);
-		
 		
 		System.out.println(str);
 		
@@ -49,6 +52,7 @@ public class Comment implements DealerComment{
 	}
 	public void dealerSay_GAME_RESULT(Result_DTO dto) {
 		int result=dto.getResult();
+		
 		
 		if(result==Result.PLAYER_WIN) {			//Player 승리
 			dealerSay(String.format(GAME_RESULT, PLAYER, WIN));
