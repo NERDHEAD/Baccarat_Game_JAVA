@@ -6,9 +6,9 @@ public class CardOne {
 	
 	public static final String[] COUNT = { 
 			   "1번째 : ", "2번째 : ", 
-			   "3번째 : ", "4번째 : " , 
+			   "3번째 : ", "4번째 : ", 
 			   "5번째 : ", "6번째 : ", 
-			   "7번째 : ", "8번째 : " };
+			   "7번째 : ", "8번째 : "};
 	public static final String[] SHAPE =  {"◆","♠","♥","♣"};
 	public static final String[] NUMBER = {"1","2","3","4","5","6","7","8","9","10","J","Q","K"}; 
 
