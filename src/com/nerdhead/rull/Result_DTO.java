@@ -2,7 +2,7 @@ package com.nerdhead.rull;
 /**
  * @since 2020.08.15
  * @author nerdhead
- * result에 담는 값은 Result.PLAYER_WIN, BANKER_WIN, TIE
+ * result에 담는 값은 Result Interface에 PLAYER_WIN, BANKER_WIN, TIE 상수로 받아 쓸 것<br>
  */
 public class Result_DTO implements Result{
 	private int result;
@@ -11,7 +11,7 @@ public class Result_DTO implements Result{
 	private boolean lucky6_1=false;
 	private boolean lucky6_2=false;
 	
-	//GETTER
+	/**GETTER*/
 	public int getResult() {
 		return result;
 	}
@@ -28,8 +28,7 @@ public class Result_DTO implements Result{
 		return lucky6_2;
 	}
 	
-	
-	//SETTER
+	/**SETTER*/
 	public void setResult(int result) {
 		this.result = result;
 	}
