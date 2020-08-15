@@ -21,10 +21,10 @@ public class Baccarat_Game {
 	/**
 	 * 게임 시작 Method
 	 */
-	
-	public void Test() {
+	public void 왜안되는거야() {
 		
 	}
+
 	public void start() {
 		//수하~ (대충 수안이 ㅎㅇ 라는 뜻)
 		/*
