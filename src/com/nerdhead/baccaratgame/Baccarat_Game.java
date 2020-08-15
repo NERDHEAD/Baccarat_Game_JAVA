@@ -22,7 +22,7 @@ public class Baccarat_Game {
 	 * 게임 시작 Method
 	 */
 	public void 왜안되는거야() {
-		
+
 	}
 
 	public void start() {
