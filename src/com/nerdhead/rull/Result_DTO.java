@@ -11,6 +11,17 @@ public class Result_DTO implements Result{
 	private boolean lucky6_1=false;
 	private boolean lucky6_2=false;
 	
+	//각각의 값이 따로 판정되서 set 되므로 생성자에서 한번에 결정될 일이 아님
+//	public Result_DTO(int result,boolean player_pair,boolean banker_pair,
+//			boolean lucky6_1,boolean lucky6_2) {
+//		this.result=result;
+//		this.player_pair=player_pair;
+//		this.banker_pair=banker_pair;
+//		this.lucky6_1=lucky6_1;
+//		this.lucky6_2=lucky6_2;
+//	}
+	
+	
 	/**GETTER*/
 	public int getResult() {
 		return result;
