@@ -4,7 +4,7 @@ public class CardOne {
 
 	/** 
 	 * @since : 2020.08.15
-	 * @author : 이수안
+	 * @author : 이수안 
 	 */
 	protected String card;
 	

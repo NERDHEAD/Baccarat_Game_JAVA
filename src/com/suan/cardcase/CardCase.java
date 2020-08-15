@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @since : 2020.08.15
  * @author : 이수안
- *
+ * 
  * Arraylist인 cardCase 생성 클래스 
  */
 public class CardCase {
