@@ -1,4 +1,4 @@
-package com.nerdhead.script;
+package com.nerdhead.input_output_manager;
 /**
  * @since 2020.08.15
  * @author nerdhead
