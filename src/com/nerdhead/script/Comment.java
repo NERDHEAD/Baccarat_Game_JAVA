@@ -13,7 +13,7 @@ public class Comment implements DealerComment{
 	private void systemSay(String str) {
 
 		System.out.println(str);
-
+		
 	}
 
 	
