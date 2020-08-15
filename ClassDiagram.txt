@@ -1,0 +1,62 @@
+Class : 바카라 게임, 대사 출력. 카드댁 만들기, 카드VO?, 손님들, 딜러원맨쇼, DisplayBoard
+Interface : 딜러대사, 시스템대사
+
+
+
+
+
+
+
+
+class [바카라게임] 
+	->private void init()			//게임초기화(다시 시작 할 때)
+	->public void start()			//게임시작
+	
+	
+	
+class [대사출력] implements [딜러대사], [시스템대사]			//CARD_DRAW   "%s의 카드 드로우....합 :  %d"
+	->private void dealerSay(String str){syso("딜러 : "+str);}
+	->private void systemSay(String str){syso(str);}
+	
+	->public void dealerSay_CARD_DRAW(String who, int sum){
+			String str=String.format(CARD_DRAW, who, sum);
+			dealerSay(str);
+		}
+	 
+interface [딜러대사],[시스템대사]
+	ex)public static final String CARD_DRAW="%s의 카드 드로우....합 :  %d";		//이런 String형의 format이 들어가게됨
+																									//[대사출력]에서  필요한 args를 받아서 완성시키게됨
+																									
+
+																									
+[카드댁]
+	private static final int DECK_COUNT=8;
+	private static final String[] SUIT={"♠","♥","♦","♣"}
+	private static final String[] NUMBER={"A","1","2","3","4","5","6","7","8","9","10","J","Q","K"};
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
