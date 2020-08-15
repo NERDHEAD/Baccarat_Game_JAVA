@@ -19,6 +19,7 @@ public class Baccarat_Game {
 	 */
 	private void init() {
 		guest.setChip(Guest.Default);
+		guest.set
 	}
 	
 	
