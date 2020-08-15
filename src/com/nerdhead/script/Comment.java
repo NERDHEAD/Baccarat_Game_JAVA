@@ -10,18 +10,14 @@ public class Comment implements DealerComment{
 		sb.setLength(0);
 		
 		sb.append(DEALER).append(" : ").append(str);
-		
-		
+
 		System.out.println(sb);
 
 	}
 
 	private void systemSay(String str) {
 		sb.setLength(0);
-		
-		
 		System.out.println(str);
-		
 	}
 	
 	public void dealerSay_WELCOME() {
@@ -49,21 +45,17 @@ public class Comment implements DealerComment{
 	}
 	public void dealerSay_GAME_RESULT(Result_DTO dto) {
 		int result=dto.getResult();
-		
 		if(result==Result.PLAYER_WIN) {			//Player 승리
 			dealerSay(String.format(GAME_RESULT, PLAYER, WIN));
 		}else if(result==Result.BANKER_WIN) {	//Banker 승리
 			dealerSay(String.format(GAME_RESULT, BANKER, WIN));
-		}else if(result==Result.TIE) {					//무승부
+		}else if(result==Result.TIE) {			//무승부
 			dealerSay(TIE);
 		}
-		
 	}
 	
 	public void dealerSay_DRAW_CARD_AT_FIRST(String who, int sum) {
 			dealerSay(String.format(DRAW_CARD_AT_FIRST, who, sum));
 	}
-	
-
 	
 }

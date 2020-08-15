@@ -45,8 +45,4 @@ public class Result_DTO implements Result{
 		this.lucky6_2 = lucky6_2;
 	}
 	
-	
-	
-	
-	
 }

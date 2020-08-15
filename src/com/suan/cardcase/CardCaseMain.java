@@ -14,8 +14,5 @@ public class CardCaseMain {
 		}
 		
 		System.out.println(lists.size());
-		
-//		Dealer d = new Dealer();
-//		d.card_Hand_In();
 	}
 }

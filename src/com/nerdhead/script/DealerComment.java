@@ -33,8 +33,6 @@ public interface DealerComment {
 	/**게임 중*/
 	public static final String DRAW_CARD_AT_FIRST="%s의 카드합 : %d"; // Player의 카드의 합 : 7
 	
-	
-	
 //	public static final String	 
 
 	
