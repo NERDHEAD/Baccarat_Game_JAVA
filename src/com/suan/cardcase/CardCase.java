@@ -3,14 +3,30 @@ package com.suan.cardcase;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @since : 2020.08.15
+ * @author : 이수안
+ *
+ * Arraylist인 cardCase 생성 클래스
+ */
 public class CardCase {
 	protected List<CardOne> cardCase;
 
+	/**
+	 * default 생성자
+	 * CardCase 클래스가 메모리에 올라오면(객체화)하면
+	 * 생성 : 
+	 * ArrayList : cardCase
+	 * Method : makeCardCase()
+	 */
 	public CardCase() {
 		cardCase = new ArrayList<CardOne>();
 		makeCardCase(); 
 	}
 
+	/**
+	 * 
+	 */
 	protected void makeCardCase() {
 		int len = CardOne.SHAPE.length * CardOne.NUMBER.length * CardOne.COUNT.length;
 		System.out.println(len);
