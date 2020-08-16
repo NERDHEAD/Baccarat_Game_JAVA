@@ -46,8 +46,12 @@ public class Comment implements DealerComment{
 		dealerSay(BET_END);
 	}
 	
-	public void dealerSay_TAKE_CARD() {
-		dealerSay(TAKE_CARD);
+	public void dealerSay_SETTING_CARD() {
+		dealerSay(SETTING_CARD);
+	}
+	
+	public void dealerSay_TAKE_CARD(String who) {
+		dealerSay(String.format(TAKE_CARD, who));
 	}
 	
 	public void dealerSay_CHECK_RULL() {
