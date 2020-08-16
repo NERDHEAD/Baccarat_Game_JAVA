@@ -11,6 +11,7 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 	private final static int GIVE_UP=-1;
 	private final static int RETRY=0;
 	private final static int CONTINUE=1;
+	private int ask;
 	
 	
 	
@@ -32,11 +33,14 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 	/**
 	 * initialize
 	 */
-	private void init() {
+	protected void init() {
+		super.init();
+		
 		/*게스트 초기화*/
 		guests=new Guests();
 		guests.setChip(Guests.DefaultChip);
 		guests.setMaxTurn(Guests.DefaultTurn);
+		
 	}
 	
 	
@@ -67,16 +71,15 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 			super.start();		//SuperClass														//3. 딜러가 게임을 진행함 -> Result_DTO(protected)에 결과가 저장됨
 			gameResult();																			//4. 배팅 정산 및 결과 출력
 																										//계속할껀지 상태보고 정하기 
-			switch (askContinue()) {
-			case value:
-				
-				break;
-
-			default:
+			askResult();
+			if(ask==CONTINUE) {
+				continue;
+			}else if(ask==RETRY) {
+				init();
+				continue;
+			}else if(ask==GIVE_UP) {
 				break;
 			}
-			
-			
 			
 		}
 		
@@ -111,4 +114,9 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 		//ex)  "누구누구"님이 칩 800개 Luck6!! 18배율!	 등등 출력후 정산표 출력
 		print.systemSay_HISTORY_BOARD(gameResultList);					//게임 누적 결과를 받아서 출력해줌
 	}
+	private void askResult() {
+		//TODO : ask에 선택 결과 저장하게하면됨
+	}
+	
+	
 }

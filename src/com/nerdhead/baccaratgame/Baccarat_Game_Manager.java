@@ -2,18 +2,19 @@ package com.nerdhead.baccaratgame;
 
 import java.util.LinkedList;
 
+import com.nerdhead.rull.ResultList;
 import com.nerdhead.rull.Result_DTO;
 
 public class Baccarat_Game_Manager {
-	Result_DTO gameResult;
-	LinkedList<Result_DTO> gameResultList;
+	protected Result_DTO gameResult;
+	protected ResultList gameResultList;
 	
 	public Baccarat_Game_Manager() {
 		init();
 	}
 	
-	private void init() {
-		gameResultList=new LinkedList<Result_DTO>();
+	protected void init() {
+		gameResultList=new ResultList();
 	}
 	
 	
