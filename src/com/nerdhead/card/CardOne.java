@@ -42,10 +42,8 @@ public class CardOne {
 	}
 	
 	private void setScore(int number) {
-		switch (number+=1) {
-		case 11:						//J Q K는 0점
-		case 12:
-		case 13:		
+		switch (number+=1) {	//10 J Q K는 0점
+		case 10:	case 11:	case 12:	case 13:			
 			score=0;
 			break;
 		default:
