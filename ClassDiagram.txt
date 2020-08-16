@@ -6,9 +6,9 @@ Interface : 딜러대사, 시스템대사
 
 
 
+class [바카라게임 오리지널] -> 순수 게임로직 + 결과 +결과누적 리스트
 
-
-class [바카라게임] 
+class [바카라게임] extends [바카라게임 오리지널] -> 오리지널에 추가로 손님 배팅 기능 추가됨
 	->private void init()			//게임초기화(다시 시작 할 때)
 	->public void start()			//게임시작
 	
@@ -29,12 +29,13 @@ interface [딜러대사],[시스템대사]
 																									
 
 																									
-[카드댁]
+[카드]
 	private static final int DECK_COUNT=8;
 	private static final String[] SUIT={"♠","♥","♦","♣"}
 	private static final String[] NUMBER={"A","1","2","3","4","5","6","7","8","9","10","J","Q","K"};
 	
-	
+[카드댁]
+	8댁 + 
 	
 
 	

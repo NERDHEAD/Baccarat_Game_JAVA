@@ -4,9 +4,10 @@ public class Card_UnitTest {
 
 	public static void main(String[] args) {
 		Card_UnitTest c=new Card_UnitTest();
-		
 //		c.test_cardmake();
-		c.test_compare();
+//		c.test_compare();
+		c.test_CardCase();
+		
 	}
 	
 	/**
@@ -38,5 +39,24 @@ public class Card_UnitTest {
 		System.out.printf("비교 -> toString : %b \t/ equals : %b\n", card1.toString().equals(card2.toString()), card1.equals(card2));
 		System.out.printf("걸린 횟수 : %d\n", cnt);
 	}
+	
+	public void test_CardCase() {
+		System.out.println("카드댁 출력");
+		CardCase cardCase=new CardCase();
+		System.out.println("카드댁 생성완료");
+		
+		cardCase.test_printCard();
+		
+		System.out.println("카드 뽑기");
+		for (int i = 0; i < 2; i++) {
+			System.out.println();
+			for(int j=0;j<5; j++) {
+				System.out.printf("%-8s", cardCase.drawCard());
+			}
+		}
+	}
+	
+	
+	
 
 }
