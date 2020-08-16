@@ -29,6 +29,14 @@
 1. 2020/08/15
       - Create Comment
       - Create DealerComment
-      - Create Result
-      - Create Result_DTO
+      - Create Result*
+      - Create Result_DTO*
+1. 2020/08/16
+      - Create ResultList
+      - Create CardOne*
+      - Create CardCase*
+      - Finished CardOne
+      - Finished CardCase
+      - Finished Result
+      - Finished Result_DTO
 
