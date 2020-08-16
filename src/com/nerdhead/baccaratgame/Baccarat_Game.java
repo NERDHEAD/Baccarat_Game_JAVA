@@ -17,10 +17,9 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 	
 	
 	/*Member Variable*/
-	private Comment print=new Comment();		//출력 담당 일진 클래스	-> 원하는 대사가 알차게 들어있음
 	private AskAbout ask=new AskAbout();			//입력 담당 일진 클래스	-> 요구한 값이 맞는지 전부 검증해줌
 	private Guests guests;								//손님 담당 일진 클래스	-> 손님수, 손님칩수, 턴수를 정해줘야함	-> 안하면 화냄
-	
+																//TODO :  4번째는 의도적으로 받지 않는다 -> 4명이면 1번째 2번째 3번째 5번째 ㅇㅇ
 
 	
 	/**
