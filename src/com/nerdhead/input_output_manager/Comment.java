@@ -1,6 +1,7 @@
 package com.nerdhead.input_output_manager;
 
 import com.nerdhead.rull.Result;
+import com.nerdhead.rull.ResultList;
 import com.nerdhead.rull.Result_DTO;
 /**
  * @since 2020.08.15
@@ -74,6 +75,10 @@ public class Comment implements DealerComment{
 	/*【시스템】 대사*/
 	public void systemSay_DUMMY() {	//사용 예시
 		systemSay("");
+	}
+
+	public void systemSay_HISTORY_BOARD(ResultList gameResultList) {
+		systemSay(gameResultList.toString());
 	}
 	
 }
