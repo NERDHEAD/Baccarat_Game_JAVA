@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.nerdhead.baccaratgame.Baccarat_Game" project="20200812_1_Baccarat_Game" 
-    file="/20200812_1_Baccarat_Game/src/com/nerdhead/baccaratgame/Baccarat_Game.java" binary="false" 
+  <class id="1" language="java" name="com.nerdhead.baccaratgame.Baccarat_Game_Manager" 
+    project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/baccaratgame/Baccarat_Game_Manager.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="78" y="379"/>    
+    <position height="-1" width="-1" x="268" y="-207"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -13,27 +14,26 @@
   </class>  
   <class id="2" language="java" name="com.nerdhead.baccaratgame.Game_Main" project="20200812_1_Baccarat_Game" 
     file="/20200812_1_Baccarat_Game/src/com/nerdhead/baccaratgame/Game_Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="78" y="223"/>    
+    <position height="-1" width="-1" x="96" y="-268"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.nerdhead.rull.Result_DTO" project="20200812_1_Baccarat_Game" 
-    file="/20200812_1_Baccarat_Game/src/com/nerdhead/rull/Result_DTO.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="874" y="542"/>    
+  <class id="3" language="java" name="com.nerdhead.card.CardCase" project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/card/CardCase.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="692" y="288"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.nerdhead.input_output_manager.Comment" project="20200812_1_Baccarat_Game" 
-    file="/20200812_1_Baccarat_Game/src/com/nerdhead/input_output_manager/Comment.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="566" y="569"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+  <class id="4" language="java" name="com.nerdhead.card.CardOne" project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/card/CardOne.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="386" x="800" y="222"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -43,49 +43,146 @@
     project="20200812_1_Baccarat_Game" 
     file="/20200812_1_Baccarat_Game/src/com/nerdhead/input_output_manager/DealerComment.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="566" y="236"/>    
+    <position height="-1" width="-1" x="816" y="-358"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="6" language="java" name="com.nerdhead.rull.Result" project="20200812_1_Baccarat_Game" 
+  <class id="6" language="java" name="com.nerdhead.input_output_manager.Comment" project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/input_output_manager/Comment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="767" y="3"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.nerdhead.dealer.DealerOneManShow" project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/dealer/DealerOneManShow.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="265" y="51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.nerdhead.rull.Result_DTO" project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/rull/Result_DTO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="289" y="523"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" language="java" name="com.nerdhead.rull.Result" project="20200812_1_Baccarat_Game" 
     file="/20200812_1_Baccarat_Game/src/com/nerdhead/rull/Result.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="899" y="262"/>    
+    <position height="-1" width="-1" x="113" y="293"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <dependency id="7">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
+  <class id="10" language="java" name="com.nerdhead.rull.Rull" project="20200812_1_Baccarat_Game" 
+    file="/20200812_1_Baccarat_Game/src/com/nerdhead/rull/Rull.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="421" width="227" x="496" y="406"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
   </dependency>  
-  <realization id="8">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <association id="9">    
+  <association id="12">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="10" name="print"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
+      <attribute id="13" name="print"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="17">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="18" name="cardCase"/>      
+      <multiplicity id="19" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="12">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <realization id="13">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="6"/>  
+  <realization id="20">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
   </realization>  
-  <dependency id="14">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="6"/>  
+  <association id="21">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="22" name="cardCase"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="24">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="25">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="26" name="player"/>      
+      <multiplicity id="27" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="29" name="rull"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="32" name="banker"/>      
+      <multiplicity id="33" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="35" name="dealer"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="38" name="gameResult"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="40">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

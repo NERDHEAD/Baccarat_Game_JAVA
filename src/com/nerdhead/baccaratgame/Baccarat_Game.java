@@ -2,16 +2,16 @@ package com.nerdhead.baccaratgame;
 
 import com.nerdhead.input_output_manager.Comment;
 /**
- * @since 2020.08.16
- * @author nerdhead
  * Manager는 단순히 게임 로직 + 결과(Result_DTO)의 LinkedList만 가지고있음(결과는 순서대로 누적되어야 하기 떄문)
  * Manager를 상속받아 손님의 기능을 추가함
+ * @since 2020.08.16
+ * @author nerdhead
  */
 public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 시작후 단순히 진행, 게임 결과만 가지는 class
 	private final static int GIVE_UP=-1;
 	private final static int RETRY=0;
 	private final static int CONTINUE=1;
-	private int ask;
+	private int askResult;
 	
 	
 	
@@ -71,12 +71,12 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 			gameResult();																			//4. 배팅 정산 및 결과 출력
 																										//계속할껀지 상태보고 정하기 
 			askResult();
-			if(ask==CONTINUE) {
+			if(askResult==CONTINUE) {
 				continue;
-			}else if(ask==RETRY) {
+			}else if(askResult==RETRY) {
 				init();
 				continue;
-			}else if(ask==GIVE_UP) {
+			}else if(askResult==GIVE_UP) {
 				break;
 			}
 			
@@ -114,7 +114,7 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 		print.systemSay_HISTORY_BOARD(gameResultList);					//게임 누적 결과를 받아서 출력해줌
 	}
 	private void askResult() {
-		//TODO : ask에 선택 결과 저장하게하면됨
+		//TODO : askResult에 선택 결과 저장하게하면됨
 	}
 	
 	
