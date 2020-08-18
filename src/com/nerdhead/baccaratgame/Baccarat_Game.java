@@ -71,14 +71,21 @@ public class Baccarat_Game extends Baccarat_Game_Manager{	//manager는 게임 �
 			gameResult();																			//4. 배팅 정산 및 결과 출력
 																										//계속할껀지 상태보고 정하기 
 			askResult();
-			if(askResult==CONTINUE) {
-				continue;
-			}else if(askResult==RETRY) {
-				init();
-				continue;
-			}else if(askResult==GIVE_UP) {
-				break;
+			switch (askResult) {
+			case RETRY:			init();
+			case CONTINUE:	continue;
+			case GIVE_UP:		return;
 			}
+			
+			
+//			if(askResult==CONTINUE) {
+//				continue;
+//			}else if(askResult==RETRY) {
+//				init();
+//				continue;
+//			}else if(askResult==GIVE_UP) {
+//				break;
+//			}
 			
 		}
 		
